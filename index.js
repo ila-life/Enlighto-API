@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const { google } = require('googleapis');
 
 const PORT = process.env.PORT || 3000;
