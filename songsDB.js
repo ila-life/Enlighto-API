@@ -45,7 +45,7 @@ const getCategories = () => {
     }).then(response => response.data.values.map(x => ({
         title: x[CATEGORIES_COLOUMN_MAPPER['title']],
         description: x[CATEGORIES_COLOUMN_MAPPER['description']],
-        imageUrl: x[SONGS_COLOUMN_MAPPER['imageUrl']]
+        imageUrl: x[CATEGORIES_COLOUMN_MAPPER['imageUrl']]
     })))
 };
 
