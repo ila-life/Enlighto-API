@@ -20,6 +20,7 @@ const getDb = () => {
         title: x[COLOUMN_MAPPER['title']],
         artist: x[COLOUMN_MAPPER['artist']],
         fileId: x[COLOUMN_MAPPER['fileId']],
+        url: `http://drive.google.com/uc?export=view&id=${x[COLOUMN_MAPPER['fileId']]}`,
         tags: x[COLOUMN_MAPPER['tags']].split(',').map(x => x.trim())
     })))
 };
